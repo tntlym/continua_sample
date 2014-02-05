@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/weight"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	xmlns:android="http://schemas.android.com/apk/res/android">
+	<Button android:id="@+id/pulseoxsend" android:layout_width="113px"
+		android:layout_height="wrap_content" android:text="@string/pulseoxsendbtn"
+		android:layout_x="10px" android:layout_y="368px">
+	</Button>
+	<EditText android:id="@+id/pulseoxspo2" android:layout_width="213px"
+		android:layout_height="wrap_content" android:textSize="18sp"
+		android:numeric="decimal" android:layout_x="14px" android:layout_y="100px">
+	</EditText>
+	<TextView android:layout_width="65px" android:layout_height="wrap_content"
+		android:text="@string/spo2metric" android:textSize="18sp"
+		android:textColor="#ff33ff00" android:layout_x="234px"
+		android:layout_y="108px">
+	</TextView>
+	<TextView android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:text="@string/pulseoxheader"
+		android:textSize="22sp" android:textColor="#ff33ff00"
+		android:layout_x="5px" android:layout_y="24px">
+	</TextView>
+	<Button android:id="@+id/pulseoxcancel" android:layout_width="111px"
+		android:layout_height="wrap_content" android:text="@string/pulseoxcancelbtn"
+		android:layout_x="173px" android:layout_y="371px">
+	</Button>
+	<EditText android:id="@+id/puleoxpulserate"
+		android:layout_width="213px" android:layout_height="wrap_content"
+		android:numeric="decimal" android:textSize="18sp" android:layout_x="16px"
+		android:layout_y="232px">
+	</EditText>
+	<TextView android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:text="@string/spo2"
+		android:textSize="16sp" android:textStyle="bold" android:textColor="#ff33ff00"
+		android:layout_x="12px" android:layout_y="69px">
+	</TextView>
+	<TextView android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:text="@string/pulserate"
+		android:textSize="16sp" android:textStyle="bold" android:textColor="#ff33ff00"
+		android:layout_x="18px" android:layout_y="202px">
+	</TextView>
+	<TextView android:layout_width="63px" android:layout_height="wrap_content"
+		android:text="@string/pulseratemetric" android:textSize="18sp"
+		android:textColor="#ff33ff00" android:layout_x="239px"
+		android:layout_y="235px">
+	</TextView>
+</RelativeLayout>

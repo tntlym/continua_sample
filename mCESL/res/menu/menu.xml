@@ -1,0 +1,5 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+	<item android:id="@+id/serversettings" android:title="Server Settings" />
+	<item android:id="@+id/logging" android:title="Logging" />
+
+</menu>

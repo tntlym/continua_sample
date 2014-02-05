@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center" >
+
+    <include
+        android:id="@+id/include1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/header_bar" />
+
+    <TextView
+        android:id="@+id/selectDeviceText"
+        style="@android:style/TextAppearance.Medium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/include1"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/reg_title_bg"
+        android:paddingLeft="5dp"
+        android:text="@string/settingsText"
+        android:textColor="@color/White" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/selectDeviceText"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="15dp"
+        android:text="Presets" />
+
+    <Spinner
+        android:id="@+id/presetValue"
+        android:layout_width="600px"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="6dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/presetValue"
+        android:layout_below="@+id/presetValue"
+        android:layout_marginTop="12dp"
+        android:text="Url" />
+
+    <EditText
+        android:id="@+id/URLValue"
+        android:layout_width="600px"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="6dp"
+        android:singleLine="true" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/URLValue"
+        android:layout_below="@+id/URLValue"
+        android:layout_marginTop="12dp"
+        android:text="Service Name" />
+
+    <EditText
+        android:id="@+id/serviceNameValue"
+        android:layout_width="600px"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_below="@+id/textView3"
+        android:layout_marginTop="6dp"
+        android:singleLine="true" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/serviceNameValue"
+        android:layout_below="@+id/serviceNameValue"
+        android:layout_marginTop="12dp"
+        android:text="Service Action" />
+
+    <EditText
+        android:id="@+id/serviceActionValue"
+        android:layout_width="600px"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView4"
+        android:layout_below="@+id/textView4"
+        android:layout_marginTop="6dp"
+        android:singleLine="true" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/serviceActionValue"
+        android:layout_below="@+id/serviceActionValue"
+        android:layout_marginTop="12dp"
+        android:text="Port" />
+
+    <EditText
+        android:id="@+id/portValue"
+        android:layout_width="600px"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView5"
+        android:layout_below="@+id/textView5"
+        android:layout_marginTop="6dp"
+        android:singleLine="true" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/saveBtn"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/portValue"
+        android:layout_below="@+id/portValue"
+        android:layout_marginTop="12dp"
+        android:text="Save" />
+
+</RelativeLayout>

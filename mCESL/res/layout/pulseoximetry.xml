@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/pulseoxroot"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	xmlns:android="http://schemas.android.com/apk/res/android">
+	<ViewStub android:id="@+id/spo2" android:inflatedId="@+id/spo2inflate"
+		android:layout="@layout/measurement" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" />
+	<ViewStub android:id="@+id/pulserate" android:inflatedId="@+id/pulserateinflate"
+		android:layout="@layout/measurement" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:layout_below="@id/spo2inflate" />
+	<ViewStub android:id="@+id/action" android:inflatedId="@+id/pulseosactioninflate"
+		android:layout="@layout/action" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:layout_below="@id/pulserateinflate" />
+</RelativeLayout>

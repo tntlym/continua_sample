@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="wrap_content" android:layout_height="wrap_content">
+	<RelativeLayout android:layout_width="480px"
+		android:layout_height="wrap_content">
+		<TextView android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="Duration"
+			android:layout_marginLeft="20px" android:layout_marginTop="20px"
+			android:textColor="@color/fontcolor" />
+		<EditText android:id="@+id/durationValue"
+			android:layout_width="340px" android:layout_height="wrap_content"
+			android:layout_marginLeft="20px" android:layout_marginTop="50px"
+			android:inputType="numberDecimal" android:maxLength="16" />
+		<TextView android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="S"
+			android:layout_marginLeft="370px" android:layout_marginTop="50px"
+			android:textColor="@color/fontcolor" />
+
+		<TextView android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="Resistance"
+			android:layout_marginLeft="20px" android:layout_marginTop="150px"
+
+			android:textColor="@color/fontcolor" />
+		<EditText android:id="@+id/resistanceValue"
+			android:layout_width="340px" android:layout_height="wrap_content"
+			android:layout_marginLeft="20px" android:layout_marginTop="180px"
+			android:inputType="numberDecimal" android:maxLength="16" />
+		<TextView android:layout_width="wrap_content"
+			android:textColor="@color/fontcolor" android:layout_height="wrap_content"
+			android:text="kg" android:layout_marginLeft="370px"
+			android:layout_marginTop="180px" />
+
+		<TextView android:layout_width="wrap_content"
+			android:textColor="@color/fontcolor" android:layout_height="wrap_content"
+			android:text="Repetitions" android:layout_marginLeft="20px"
+			android:layout_marginTop="280px" />
+		<EditText android:id="@+id/repetitionsValue"
+			android:layout_width="340px" android:layout_height="wrap_content"
+			android:layout_marginLeft="20px" android:layout_marginTop="310px"
+			android:inputType="numberDecimal" android:maxLength="16" />
+
+
+	</RelativeLayout>
+	<RelativeLayout android:layout_width="480px"
+		android:id="@+id/wtDialogButtonLayout" android:layout_height="wrap_content"
+		android:layout_marginTop="425px">
+		<include layout="@layout/buttonslayout"></include>
+	</RelativeLayout>
+</RelativeLayout>

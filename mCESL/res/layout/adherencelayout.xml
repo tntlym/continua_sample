@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="wrap_content" android:layout_height="wrap_content">
+	<RelativeLayout android:layout_width="480px"
+		android:layout_height="wrap_content">
+		<TextView android:layout_width="wrap_content"
+			android:textColor="@color/fontcolor" android:layout_height="wrap_content"
+			android:text="Dosage" android:layout_marginLeft="20px" />
+		<EditText android:id="@+id/adherenceValue"
+			android:layout_width="340px" android:layout_height="wrap_content"
+			android:layout_marginLeft="20px" android:layout_marginTop="30px"
+			android:inputType="numberDecimal" android:maxLength="16" />
+		<TextView android:textColor="@color/fontcolor"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:text="ml" android:layout_marginLeft="370px"
+			android:layout_marginTop="30px" />
+	</RelativeLayout>
+	<RelativeLayout android:layout_width="480px"
+		android:id="@+id/wtDialogButtonLayout" android:layout_height="wrap_content"
+		android:layout_marginTop="160px">
+		<include layout="@layout/buttonslayout"></include>
+	</RelativeLayout>
+</RelativeLayout>

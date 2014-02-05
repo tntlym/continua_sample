@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/header_bar" >
+    </include>
+
+    <!-- First LL -->
+
+    <LinearLayout
+        android:id="@+id/deviceDescriptionLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_margin="3dp"
+        android:layout_weight="@string/deviceDescriptionLayout_weight"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <!-- Name of the connected device -->
+
+            <TextView
+                android:id="@+id/connected_device"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/connected_device_marginLeft"
+                android:layout_marginTop="@dimen/connected_device_marginTop"
+                android:text="@string/connected_device"
+                android:textAppearance="@android:style/TextAppearance.Medium"
+                android:textColor="#012F63" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="@dimen/connected_device_marginTop"
+                android:background="#0D4D79" />
+
+            <!-- Description of the connected device -->
+            <!-- Name of the system -->
+
+            <TextView
+                android:id="@+id/system_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/system_data_marginLeft"
+                android:layout_marginTop="@dimen/connected_device_marginTop"
+                android:text="@string/system_name"
+                android:textColor="#0D4D79" />
+
+            <TextView
+                android:id="@+id/system_name_data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/system_data_marginLeft"
+                android:maxLines="@string/system_data_maxLines"
+                android:textColor="#538CCC" />
+            <!-- Model of the system -->
+
+            <TextView
+                android:id="@+id/system_model"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/system_data_marginLeft"
+                android:text="@string/system_model"
+                android:textColor="#0D4D79" />
+
+            <TextView
+                android:id="@+id/system_model_data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/system_data_marginLeft"
+                android:maxLines="@string/system_data_maxLines"
+                android:textColor="#538CCC" />
+            <!-- Manufacturer of the system -->
+
+
+            <!-- ID of the system -->
+
+            <TextView
+                android:id="@+id/system_ID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/system_data_marginLeft"
+                android:text="@string/system_ID"
+                android:textColor="#0D4D79" />
+
+            <TextView
+                android:id="@+id/system_ID_data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/system_data_marginLeft"
+                android:maxLines="@string/system_data_maxLines"
+                android:textColor="#538CCC" />
+            
+            <TextView
+                android:id="@+id/system_transport"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/system_data_marginLeft"
+                android:text="@string/system_transport"
+                android:textColor="#0D4D79" />
+            
+            <TextView
+                android:id="@+id/system_transport_data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/system_data_marginLeft"
+                android:maxLines="@string/system_data_maxLines"
+                android:text="@string/system_transport_data"
+                android:textColor="#538CCC" />
+
+            <!-- Image of the connected device -->
+        </LinearLayout>
+
+        <!-- android:src="@drawable/nonin_9560" -->
+
+        <ImageView
+            android:id="@+id/device_icon"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_margin="20dp"
+            android:layout_weight="1"
+            android:contentDescription="@string/device_desc"
+            android:scaleType="fitCenter"
+            android:src="@drawable/scale" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/current_state_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/system_data_marginLeft"
+        android:text="@string/current_state"
+        android:textAppearance="@android:style/TextAppearance.Medium"
+        android:textColor="#012F63" />
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="@dimen/connected_device_marginTop"
+        android:background="#0D4D79" />
+
+    <TextView
+        android:id="@+id/current_state_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="@dimen/connected_device_marginTop"
+        android:text="@string/disconnected"
+        android:textAppearance="@android:style/TextAppearance.Small"
+        android:textColor="#538CCC" />
+
+    <!-- Value for current state of connected device -->
+
+
+    <!-- LL for Readings -->
+
+    <LinearLayout
+        android:id="@+id/deviceReadingsLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_margin="3dp"
+        android:layout_weight="@string/deviceReadingsLayout_weight"
+        android:orientation="vertical" >
+
+        <!-- Vertical -->
+
+        <TextView
+            android:id="@+id/readings_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/system_data_marginLeft"
+            android:text="@string/readings"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:textColor="#012F63" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="@dimen/connected_device_marginTop"
+            android:background="#0D4D79" />
+
+        <ListView
+            android:id="@+id/readings_list"
+            android:layout_width="@dimen/listView_width"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/listView_marginLeft"
+            android:layout_marginTop="@dimen/listView_marginTop"
+            android:listSelector="#00000000"
+            android:scrollbarAlwaysDrawVerticalTrack="true"
+            android:scrollbarFadeDuration="10000"
+            android:fastScrollEnabled="false" >
+        </ListView>
+    </LinearLayout>
+
+    <!-- Lower Linear Layout for logos -->
+
+    <LinearLayout
+        android:id="@+id/logoLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_margin="3dp"
+        android:layout_weight="@string/logoLayout_weight"
+        android:gravity="bottom"
+        android:orientation="horizontal" >
+
+        <!-- android:src="@drawable/vignet2" -->
+
+        <ImageView
+            android:id="@+id/vignet_logo"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/system_data_marginLeft"
+            android:layout_weight="@string/vignet_logo_weight"
+            android:contentDescription="@string/vignet_logo_desc"
+            android:src="@drawable/vignet2" >
+        </ImageView>
+
+        <!-- android:src="@drawable/continua_logo_sm" -->
+
+        <ImageView
+            android:id="@+id/continua_logo"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="2dp"
+            android:layout_weight="@string/continua_logo_weight"
+            android:contentDescription="@string/continua_logo_desc"
+            android:src="@drawable/continua_logo_sm" >
+        </ImageView>
+    </LinearLayout>
+
+</LinearLayout>

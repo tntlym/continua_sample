@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="wrap_content" android:layout_height="wrap_content">
+
+	<ViewStub android:id="@+id/systolic" android:inflatedId="@+id/systolicinflate"
+		android:layout="@layout/measurement" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" />
+	<ViewStub android:id="@+id/mean" android:inflatedId="@+id/meaninflate"
+		android:layout="@layout/measurement" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:layout_below="@id/systolicinflate" />
+	<ViewStub android:id="@+id/diastolic" android:inflatedId="@+id/diastolicinflate"
+		android:layout="@layout/measurement" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:layout_below="@id/meaninflate" />
+	<ViewStub android:id="@+id/pulserate" android:inflatedId="@+id/pulserateinflate"
+		android:layout="@layout/measurement" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:layout_below="@id/diastolicinflate" />
+	<ViewStub android:id="@+id/action" android:inflatedId="@+id/pulseosactioninflate"
+		android:layout="@layout/action" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:layout_below="@id/pulserateinflate" />
+</RelativeLayout>

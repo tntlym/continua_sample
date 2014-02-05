@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:layout_width="480px"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20px"
+            android:layout_marginTop="10px"
+            android:text="Presets"
+            android:textColor="@color/fontcolor" />
+
+        <Spinner
+            android:id="@+id/presetValue"
+            android:layout_width="340px"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20px"
+            android:layout_marginTop="40px" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20px"
+            android:layout_marginTop="110px"
+            android:text="Url"
+            android:textColor="@color/fontcolor" />
+
+        <EditText
+            android:id="@+id/URLValue"
+            android:layout_width="340px"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20px"
+            android:layout_marginTop="140px"
+            android:singleLine="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20px"
+            android:layout_marginTop="210px"
+            android:text="Service Name"
+            android:textColor="@color/fontcolor" />
+
+        <EditText
+            android:id="@+id/serviceNameValue"
+            android:layout_width="340px"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20px"
+            android:layout_marginTop="240px"
+            android:singleLine="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20px"
+            android:layout_marginTop="310px"
+            android:text="Service Action"
+            android:textColor="@color/fontcolor" />
+
+        <EditText
+            android:id="@+id/serviceActionValue"
+            android:layout_width="340px"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20px"
+            android:layout_marginTop="340px"
+            android:singleLine="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20px"
+            android:layout_marginTop="410px"
+            android:text="Port"
+            android:textColor="@color/fontcolor" />
+		>
+
+        <EditText
+            android:id="@+id/portValue"
+            android:layout_width="340px"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20px"
+            android:layout_marginTop="440px"
+            android:inputType="numberDecimal"
+            android:maxLength="4"
+            android:singleLine="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/wtDialogButtonLayout"
+        android:layout_width="480px"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="520px" >
+
+        <include layout="@layout/buttonslayout" >
+        </include>
+    </RelativeLayout>
+
+</RelativeLayout>

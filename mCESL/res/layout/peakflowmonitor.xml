@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="wrap_content" android:layout_height="wrap_content">
+	<RelativeLayout android:layout_width="480px"
+		android:layout_height="wrap_content" android:id="@+id/textlayout">
+		<TextView android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="Personal Best"
+			android:layout_marginLeft="20px" android:layout_marginTop="20px"
+			android:textColor="@color/fontcolor" />
+		<EditText android:id="@+id/peakbestValue"
+			android:layout_width="340px" android:layout_height="wrap_content"
+			android:layout_marginLeft="20px" android:layout_marginTop="50px"
+			android:inputType="numberDecimal" android:maxLength="16" />
+		<TextView android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="l/min"
+			android:layout_marginLeft="370px" android:layout_marginTop="50px"
+			android:textColor="@color/fontcolor" />
+	</RelativeLayout>
+	<RelativeLayout android:layout_width="480px"
+		android:layout_height="wrap_content" android:layout_below="@id/textlayout">
+		<RadioGroup android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:id="@+id/measurementstatus">
+			<TextView android:id="@+id/SelectLabel"
+				android:layout_width="310px" android:layout_height="wrap_content"
+				android:text="Measurement Status" android:textColor="@color/fontcolor"
+				android:layout_marginLeft="20px" />
+
+			<RadioButton android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:text="Post Medical"
+				android:layout_marginLeft="20px" android:id="@+id/postMedButton" />
+			<RadioButton android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:text="Cough"
+				android:layout_marginLeft="20px" android:id="@+id/coughButton" />
+			<RadioButton android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:text="Short Effort"
+				android:layout_marginLeft="20px" android:id="@+id/shorteffortButton" />
+
+			<RadioButton android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:text="Long Time To Peak"
+				android:layout_marginLeft="20px" android:id="@+id/longtimeButton" />
+		</RadioGroup>
+	</RelativeLayout>
+	<RelativeLayout android:layout_width="480px"
+		android:id="@+id/wtDialogButtonLayout" android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true">
+		<include layout="@layout/buttonslayout"></include>
+	</RelativeLayout>
+</RelativeLayout>

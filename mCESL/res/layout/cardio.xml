@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="wrap_content" android:layout_height="wrap_content">
+
+	<ViewStub android:id="@+id/sessiondistance"
+		android:inflatedId="@+id/sessiondistanceinflate" android:layout="@layout/measurement"
+		android:layout_width="wrap_content" android:layout_height="wrap_content" />
+
+	<ViewStub android:id="@+id/sessiontime" android:inflatedId="@+id/sessiontimeinflate"
+		android:layout="@layout/measurement" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:layout_below="@id/sessiondistanceinflate" />
+	<ViewStub android:id="@+id/sessionheartrate"
+		android:inflatedId="@+id/sessionheartrateinflate" android:layout="@layout/measurement"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:layout_below="@id/sessiontimeinflate" />
+	<ViewStub android:id="@+id/action" android:inflatedId="@+id/cardioactioninflate"
+		android:layout="@layout/action" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:layout_below="@id/sessionheartrateinflate" />
+</RelativeLayout>

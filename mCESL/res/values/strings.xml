@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, main!</string>
+    <string name="app_name">Continua PAN/WAN Manager</string>
+    <string name="SelectLabel">Please select a device:</string>
+    <string name="weightmetricunit">kg.</string>
+    <string name="weightheader">Weight Scale</string>
+    <string name="weightsendbtn">Send</string>
+    <string name="weightcancelbtn">Cancel</string>
+    <string name="pulseoxheader">Pulse Oximetry</string>
+    <string name="spo2">SpO2</string>
+    <string name="spo2metric">SpO2</string>
+    <string name="pulserate">Pulse Rate</string>
+    <string name="pulseratemetric">BPM</string>
+    <string name="pulseoxsendbtn">Send</string>
+    <string name="pulseoxcancelbtn">Cancel</string>
+    <string name="weightselectlabel">Weight Scale</string>
+    <string name="pulseoxselectlabel">Pulse Oximetry</string>
+    <string name="defaultobservation">none</string>
+
+    <string name="sendbtn">Send</string>
+    <string name="cancelbtn">Cancel</string>
+    <string name="tempratureFahremheit">°F</string>
+    <string name="nointerneterror">Unable to connect to network. Cannot send the data.</string>
+    <string name="bloodpressuremonselectlabel">Blood Pressure</string>
+    <string name="cardioselectlabel">Cardio Vascular</string>
+    <string name="glucoseselectlabel">Blood Glucose</string>
+    <string name="thermometerselectlabel">Thermometer</string>
+    <string name="termometerlabel">Temperature</string>
+    <string name="glucoselabel">Glucose</string>
+    <string name="glucoseunit">mg/dL</string>
+    <string name="systoliclabel">Systolic</string>
+    <string name="systolicunit">mmHg</string>
+    <string name="meanlabel">Mean</string>
+    <string name="meanunit">mmHg</string>
+    <string name="diastoliclabel">Diastolic</string>
+    <string name="diastolicunit">mmHg</string>
+    <string name="pulseratelabel">Pulse Rate</string>
+    <string name="pulserateunit">BPM</string>
+    <string name="sessiondistlabel">Distance</string>
+    <string name="sessiondistunit">m</string>
+    <string name="sessionheartratelabel">Heart Rate</string>
+    <string name="sessionheartrateunit">BPM</string>
+    <string name="sessiontimelabel">Time</string>
+    <string name="sessiontimeunit">S</string>
+    <string name="livingselectlabel">Independent Living Hub</string>
+    <string name="medicinemonitorselectlabel">Adherence Monitor</string>
+    <string name="strengthselectlabel">Strength &amp; Fitness Equipment</string>
+    <string name="peakflowselectlabel">Peak Flow Monitor</string>
+    <string name="insulinpumpselectlabel">Insulin Pump</string>
+
+    
+    <string name="selectText">Device type</string>
+    <string name="settingsText">Upload Settings</string>
+    <string name="connected_device">Device details</string>
+    <string name="current_state">Current State:</string>
+    <string name="associated">Associated</string>
+    <string name="not_associated">Not Associated</string>
+    <string name="readings">Readings:</string>
+    <string name="unassociate">Unassociate</string>
+    <string name="abort">Abort</string>
+    <string name="disconnected">Disconnected</string>
+    <string name="device_desc">This is the image of the currently connected device</string>
+    <string name="vignet_logo_desc">This is the logo of Vignet</string>
+    <string name="continua_logo_desc">This is the logo of Continua Alliance</string>
+    <string name="system_name">Name: </string>
+    <string name="system_model">Specialization: </string>
+    <string name="system_manufacturer">Manufacturer: </string>
+    <string name="system_ID">Address: </string>
+    <string name="system_transport">Transport: </string>
+    <string name="system_transport_data">BT-HDP</string>
+    <string name="system_name_data">Pulse Oximeter</string>
+    <string name="system_model_data">Pulse Oximeter\n1.0.0.1</string>
+    <string name="system_manufacturer_data">Nonin Medical Inc.</string>
+    <string name="deviceDescriptionLayout_weight">3</string>
+    <string name="deviceStateLayout_weight">0.5</string>
+    <string name="deviceReadingsLayout_weight">2</string>
+    <string name="logoLayout_weight">1.5</string>
+    <string name="settingsLayout_weight">1</string>
+    <string name="system_data_maxLines">3</string>
+    <string name="vignet_logo_weight">1</string>
+    <string name="continua_logo_weight">1</string>
+    <string name="max_length">15</string>
+    <string name="connect_btn_text">Connect</string>
+	<string name="upload">Upload to WAN</string>
+</resources>

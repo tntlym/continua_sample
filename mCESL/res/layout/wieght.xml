@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout android:id="@+id/weight"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+	<Button android:id="@+id/weightsend" android:layout_width="113px"
+		android:layout_height="wrap_content" android:text="@string/weightsendbtn"
+		android:gravity="center" android:layout_x="3px" android:layout_y="218px">
+	</Button>
+	<EditText android:id="@+id/weightmeasure"
+		android:layout_width="213px" android:layout_height="wrap_content"
+		android:numeric="decimal" android:textSize="18sp" android:layout_x="20px"
+		android:layout_y="90px">
+	</EditText>
+	<TextView android:layout_width="65px" android:layout_height="wrap_content"
+		android:text="@string/weightmetricunit" android:textSize="18sp"
+		android:textColor="#ff33cc00" android:layout_x="237px"
+		android:layout_y="98px">
+	</TextView>
+	<Button android:id="@+id/weightcancel" android:layout_width="111px"
+		android:layout_height="wrap_content" android:text="@string/weightcancelbtn"
+		android:layout_x="205px" android:layout_y="217px">
+	</Button>
+	<TextView android:text="@string/weightheader"
+		android:layout_x="28dip" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:layout_y="31dip"
+		android:textSize="22sp" android:textColor="#ff33cc00">
+	</TextView>
+	<View android:id="@+id/themometersend" />
+	<View android:id="@+id/themometercancel" />
+	<View android:id="@+id/themometermeasure" />
+	<View android:id="@+id/glucosesend" />
+	<View android:id="@+id/glucosecancel" />
+	<View android:id="@+id/glucosemeasure" />
+	<View android:id="@+id/bpsend" />
+	<View android:id="@+id/bpcancel" />
+	<View android:id="@+id/cardsend" />
+	<View android:id="@+id/cardcancel" />
+
+	<View android:id="@+id/systolicmeasure" />
+	<View android:id="@+id/meanmeasure" />
+	<View android:id="@+id/diastolicmeasure" />
+	<View android:id="@+id/pulseratemeasure" />
+	<View android:id="@+id/sessiondistmeasure" />
+	<View android:id="@+id/sessionheartratemeasure" />
+	<View android:id="@+id/sessiontimemeasure" />
+</AbsoluteLayout>
+

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/White"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/header_bar" />
+
+    <TextView
+        android:id="@+id/selectDeviceText"
+        style="@android:style/TextAppearance.Medium"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="2dp"
+        android:layout_weight="0.5"
+        android:background="@drawable/reg_title_bg"
+        android:text="@string/selectText"
+        android:textColor="@color/White"
+        android:paddingLeft="5dp" />
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="@dimen/connected_device_marginTop"
+        android:background="#0D4D79" />
+
+    <ListView
+        android:id="@+id/deviceList"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_margin="5dp"
+        android:layout_weight="6"
+        android:choiceMode="singleChoice" />
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="@dimen/connected_device_marginTop"
+        android:background="#0D4D79" />
+    
+    <TextView
+        android:id="@+id/uploadSettingsText"
+        style="@android:style/TextAppearance.Medium"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="5dp"
+        android:layout_weight="0.5"
+        android:background="@drawable/reg_title_bg"
+        android:text="@string/settingsText"
+        android:textColor="@color/White"
+        android:paddingLeft="5dp" />
+
+    <LinearLayout
+        android:id="@+id/settingsLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_margin="5dp"
+        android:layout_weight="@string/settingsLayout_weight"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" >
+
+            <CheckBox
+                android:id="@+id/uploadChkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="30dp"
+                android:checked="false"
+                android:text="@string/upload"></CheckBox>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1" >
+
+            <Button
+                android:id="@+id/setingsBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="3dp"
+                android:clickable="false"
+                android:enabled="false"
+                android:gravity="center"
+                android:text="Settings" />
+
+        </LinearLayout>
+        
+    </LinearLayout>
+    
+        <View
+        android:layout_width="wrap_content"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="@dimen/connected_device_marginTop"
+        android:background="#0D4D79" />
+    
+
+    <LinearLayout
+        android:id="@+id/logoLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_margin="5dp"
+        android:layout_weight="@string/logoLayout_weight"
+        android:gravity="bottom"
+        android:orientation="horizontal" >
+
+        <!-- android:src="@drawable/vignet2" -->
+
+        <ImageView
+            android:id="@+id/vignet_logo"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/system_data_marginLeft"
+            android:layout_weight="@string/vignet_logo_weight"
+            android:contentDescription="@string/vignet_logo_desc"
+            android:src="@drawable/vignet2" >
+        </ImageView>
+
+        <!-- android:src="@drawable/continua_logo_sm" -->
+
+        <ImageView
+            android:id="@+id/continua_logo"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="2dp"
+            android:layout_weight="@string/continua_logo_weight"
+            android:contentDescription="@string/continua_logo_desc"
+            android:src="@drawable/continua_logo_sm" >
+        </ImageView>
+    </LinearLayout>
+
+</LinearLayout>

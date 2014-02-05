@@ -1,0 +1,15 @@
+<resources>
+
+    <string-array name="devices">
+        <item>Weight Scale</item>
+        <item>Pulse Oxi-Meter</item>
+        <item>Blood Pressure Monitor</item>
+    </string-array>
+    <string-array name="presets">
+        <item>Last Used</item>
+        <item>BXI Server</item>
+        <item>IBM Server</item>
+        <item>Local Test Tool</item>
+    </string-array>
+
+</resources>
